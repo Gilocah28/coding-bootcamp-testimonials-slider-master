@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  max-width: 1440px;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.main-container {
+  width: auto;
+}
+.main-container .main-wrapper {
+  display: flex;
+  max-width: 1100px;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 858px) {
+  .main-container .main-wrapper {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    padding: 1rem;
+  }
+}
+.main-container .main-wrapper .wrapper-text {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  flex: 1;
+}
+.main-container .main-wrapper .text {
+  background-image: url(../../coding-bootcamp-testimonials-slider-master/images/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: 20% top;
+  padding: 2rem 0;
+  animation: fade 0.5s ease-in-out;
+  margin-right: -5rem;
+  z-index: 1;
+}
+@media screen and (max-width: 858px) {
+  .main-container .main-wrapper .text {
+    background-position: 50% top;
+    background-size: 20%;
+    text-align: center;
+    margin-right: 0;
+  }
+}
+.main-container .main-wrapper .text .qoutes {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: hsl(240, 38%, 20%);
+  letter-spacing: 1.2px;
+  line-height: 2.5rem;
+  width: 100%;
+  max-width: 600px;
+  animation: fade 0.5s ease-in-out;
+}
+@media screen and (max-width: 375px) {
+  .main-container .main-wrapper .text .qoutes {
+    font-size: 1.5rem;
+  }
+}
+.main-container .main-wrapper .text .name {
+  font-weight: 700;
+  color: hsl(240, 38%, 20%);
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  animation: fade 0.5s ease-in-out;
+}
+@media screen and (max-width: 375px) {
+  .main-container .main-wrapper .text .name {
+    font-size: 1rem;
+  }
+}
+.main-container .main-wrapper .text .name span {
+  color: hsl(240, 18%, 77%);
+}
+.main-container .main-wrapper .image-wrapper {
+  flex: 1;
+  position: relative;
+  background-image: url(../../coding-bootcamp-testimonials-slider-master/images/pattern-bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 450px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.main-container .main-wrapper .image-wrapper .image-container {
+  width: 90%;
+}
+@media screen and (max-width: 858px) {
+  .main-container .main-wrapper .image-wrapper .image-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.main-container .main-wrapper .image-wrapper .image-container #Image-source {
+  border-radius: 20px;
+  width: 80%;
+  animation: fade 0.5s ease-in-out;
+}
+@media screen and (max-width: 858px) {
+  .main-container .main-wrapper .image-wrapper .image-container #Image-source {
+    width: 100%;
+  }
+}
+.main-container .main-wrapper .image-wrapper .btn-container {
+  background-color: white;
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.21);
+  position: absolute;
+  left: 3rem;
+  bottom: 1rem;
+}
+@media screen and (max-width: 858px) {
+  .main-container .main-wrapper .image-wrapper .btn-container {
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40px;
+    width: 90px;
+  }
+}
+.main-container .main-wrapper .image-wrapper .btn-container .prev,
+.main-container .main-wrapper .image-wrapper .btn-container .next {
+  border: none;
+  background: none;
+  width: 70%;
+  border-radius: 15px;
+  width: 50px;
+}
+.main-container .main-wrapper .image-wrapper .btn-container .prev:hover,
+.main-container .main-wrapper .image-wrapper .btn-container .next:hover {
+  cursor: pointer;
+  transition: all 20s ease-in-out;
+  opacity: 0.7;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=main.css.map */
