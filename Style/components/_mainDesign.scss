@@ -22,9 +22,9 @@
         }
         
         .text {
-            background-image: url(../../coding-bootcamp-testimonials-slider-master/images/pattern-quotes.svg);
+            background-image: url(../../images/pattern-quotes.svg);
             background-repeat: no-repeat;
-            background-size: 30%;
+            background-size: 50%;
             background-position: 20% top;
             padding: 2rem 0;
             animation: fade .50s ease-in-out;
@@ -78,7 +78,7 @@
         .image-wrapper {
             flex: 1;
             position: relative;
-            background-image: url(../../coding-bootcamp-testimonials-slider-master/images/pattern-bg.svg);
+            background-image: url(../../images/pattern-bg.svg);
             background-repeat: no-repeat;
             background-size: contain;
             height: 450px;
